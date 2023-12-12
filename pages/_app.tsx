@@ -1,6 +1,13 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import { FontProperty } from "@/components/FontProperty";
+import React from "react";
+import { RecoilRoot } from "recoil";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+function App() {
+  return (
+    <RecoilRoot>
+      <FontProperty />
+    </RecoilRoot>
+  );
 }
+
+export default App;
